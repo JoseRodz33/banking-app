@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Oui Bank Better</title>
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <header>Oui Bank Better</header>
+
+        <div class="main-content">
+
+        <div class="balance">
+            <h1 id="balance">Balance</h1>
+            <p id="amount">$ 0.00</p>
+            <button id="reset">Reset</button>
+
+            </div>
+            <div class="transaction">
+            <div id="trans-label">Submit Transaction</div>
+
+            <div class="inner-transaction">
+                <label for="amount-input" id="amount-label"><strong>Amount</strong></label>
+                
+                <div class="amount-input">
+                    <p id="money"><strong>$</strong></p>
+                    
+                    <input type="number" step=".01" class="form-control" id="amount" name="amount">
+
+                </div>
+
+                <label for="trans-type" id="type-label"><strong>Type</strong></label>
+                <select name="trans-type" class="trans-type">
+                    <option value="Deposit">Deposit</option>
+                    <option value="withdraw">Withdraw</option>
+
+                </select>
+                <div class="submit-container">
+                    <button id="submit-btn">Submit</button>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="transaction">
+        <table class="transaction-table">
+            <thead class="table-header">
+                <th scoop="col">Transaction ID</th>
+                <th scoop="col">Type</th>
+                <th scoop="col">Amount</th>
+                <th scoop="col">Starting Balance</th>
+                <th scoop="col">New Balance</th>
+            </thead>
+            <tbody class="table-body">
+
+            </tbody>
+        </table>
+    </div>
+    
+    
+</body>
+</html>
